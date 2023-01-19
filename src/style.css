@@ -1,0 +1,27 @@
+.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+}
+
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
